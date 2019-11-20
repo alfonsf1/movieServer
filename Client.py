@@ -217,7 +217,7 @@ class Client:
 
 		# Send the RTSP request using rtspSocket.
 		# ...
-		self.rtspSocket.send(request)
+		self.rtspSocket.send(request.encode('utf-8'))
 
 		print('\nData sent:\n' + request)
 
